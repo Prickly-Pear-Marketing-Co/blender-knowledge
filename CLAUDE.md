@@ -8,6 +8,20 @@ Purpose: close the bpy API knowledge gap and provide reusable workflow
 recipes so Claude generates correct, version-appropriate Blender code
 without hallucinating operators or shader properties.
 
+## Session pickup — read these first
+
+This is a multi-track project. On any new session:
+
+1. **`dev/STATUS.md`** — current state: what's done, what's broken, where things live, open decisions
+2. **`dev/ROADMAP.md`** — 6-phase plan across Tracks A (corpus), B (streaming harness), C (user-layer)
+3. **`dev/RESEARCH.md`** — failure-mode taxonomy, BlenderRAG findings, Gemini Live vs Claude, pi.dev rationale, sources
+4. `PERSONALIZATION.md` — two-layer KB design (this repo + per-user sibling)
+5. `skills/blender-expert/SKILL.md` — Claude behavior during Blender sessions
+
+Default next action per roadmap: **Phase 1 — build `scripts/eval_runner.py`** + run baseline vs corpus eval on the 15 tasks in `eval/tasks.md`. Measure first; author more chunks only where eval shows knowledge moves the needle.
+
+Companion idea-machine topic for meta-insights: `knowledge-systems` (private). 7 insights persisted 2026-05-16.
+
 ## Scope
 
 **In scope:**
