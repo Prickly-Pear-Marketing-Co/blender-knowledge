@@ -1,0 +1,18 @@
+node_modules/
+.DS_Store
+.qmd/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Source ingestion targets — clone via submodule or scripts, not committed
+sources/blender-manual/
+sources/blender-api-docs/
+
+# Eval run outputs (large, regenerable). Keep manifests but not blobs.
+eval/runs/*/renders/
+eval/runs/*/screenshots/
+eval/runs/*/transcripts/
